@@ -18,7 +18,7 @@ class TodoController extends Controller
     {
         return response()->json([
             'status' => 1,
-            'message' => 'Succesfully'
+            'message' => 'Index'
         ], 200);
     }
 
@@ -27,7 +27,15 @@ class TodoController extends Controller
     {
         return response()->json([
             'status'  => 1,
-            'message' => 'Data saved successfully'
-        ]);
+            'message' => 'Store'
+        ], 200);
+    }
+
+    public function edit($id)
+    {
+        return response()->json([
+            'status'  => 1,
+            'message' => 'Edit'
+        ], 200);
     }
 }
