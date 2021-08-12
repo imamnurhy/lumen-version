@@ -21,4 +21,13 @@ class TodoController extends Controller
             'message' => 'Succesfully'
         ], 200);
     }
+
+
+    public function store()
+    {
+        return response()->json([
+            'status'  => 1,
+            'message' => 'Data saved successfully'
+        ]);
+    }
 }
