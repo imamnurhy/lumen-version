@@ -21,4 +21,5 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'todos'], function () use ($router) {
     $router->get('/', 'TodoController@index');
     $router->post('/', 'TodoController@store');
+    $router->post('/{id}', 'TodoController@edit');
 });

@@ -27,7 +27,15 @@ class TodoController extends Controller
     {
         return response()->json([
             'status'  => 1,
-            'message' => 'Data saved successfully'
+            'message' => 'Store'
+        ]);
+    }
+
+    public function edit()
+    {
+        return response()->json([
+            'status'  => 1,
+            'message' => 'Edit'
         ]);
     }
 }
